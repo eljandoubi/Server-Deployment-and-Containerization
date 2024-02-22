@@ -28,9 +28,8 @@ phases:
       - export PATH=$PWD/:$PATH  
       - echo 'export PATH=$PWD/:$PATH' >> $HOME/.bashrc
       - echo `kubectl version --client`
-      - apt-get update 
-      - apt-get -y install jq
       - python --version
+      - apt-get -y install jq
       - pip install --upgrade awscli
   pre_build:
       commands:
